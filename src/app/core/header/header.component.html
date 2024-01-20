@@ -1,52 +1,51 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">AlphaShop</a>
-  
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-              aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- Blocco dei menu -->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" title="Prodotti" href="#">Prodotti</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" title="Promozioni" href="#">Promozioni</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" title="Fidelity" href="#">Fidelity</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" title="Ordini" href="#">Ordini</a>
-          </li>
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">AlphaShop</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Blocco dei menu -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" routerLink="/welcome">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" title="Prodotti" routerLink="/articoli">Prodotti</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" title="Promozioni" routerLink="/promozione">Promozioni</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" title="Fidelity" routerLink="/fidelity">Fidelity</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" title="Ordini" routerLink="/ordini">Ordini</a>
+        </li>
+      </ul>
+      <!-- Motore di Ricerca -->
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Cerca</button>
+      </form>
+
+      <!-- Menu contestuale dell'utente -->
+      <div class="btn-group">
+        <button type="button" class="btn btn-default dropdown-toggle thumbnail dduser" data-bs-toggle="dropdown" aria-expanded="false">
+          <img class="img-circle" src="/assets/images/user.png" width="38" height="38">
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Accedi</a></li>
+          <li><a class="dropdown-item" href="#">Registrati</a></li>
+          <li><a class="dropdown-item" href="#">Disabilita</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#">Logout</a></li>
         </ul>
-        <!-- Motore di Ricerca -->
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Cerca</button>
-        </form>
-  
-        <!-- Menu contestuale dell'utente -->
-        <div class="btn-group">
-          <button type="button" class="btn btn-default dropdown-toggle thumbnail dduser" data-bs-toggle="dropdown" aria-expanded="false">
-            <img class="img-circle" src="/assets/images/user.png" width="38" height="38">
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Accedi</a></li>
-            <li><a class="dropdown-item" href="#">Registrati</a></li>
-            <li><a class="dropdown-item" href="#">Disabilita</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Logout</a></li>
-          </ul>
-        </div>
-  
       </div>
+
     </div>
-  </nav>
-  
+  </div>
+</nav>

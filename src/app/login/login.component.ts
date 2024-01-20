@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Route, Router } from '@angular/router';
-import { log } from 'console';
+
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -9,35 +9,31 @@ import { log } from 'console';
 })
 export class LoginComponent implements OnInit {
 
-  userId: string = "davide";
-  password: string = "1234!!_!C";
+  userId : string = "davide";
+  password : string = "1234_Gino!!";
 
-  autenticato: boolean = true;
-  errMsg: string = "Spiacente, la userId e/ o la password sono errati!";
+  autenticato : boolean = true;
+  errMsg : string = 'Spiacente, la userid o la password sono errati!';
 
-  // okMsg: string = "";
-
-
-
-
-  constructor(private route: Router) { }
+  constructor(private route: Router) {}
 
   ngOnInit(): void {
   }
 
-  gestAuth = (): void => {
-    console.log(this.userId);
+  titolo: string = "Accesso & Autenticazione";
+  sottotitolo: string = "Procedi ad inserire la userid e la password";
 
-    if (this.userId === "davide" && this.password === "1234!!_!C1") {
+  gestAuth = () => {
+
+    if (this.userId === "davide" && this.password === "1234_Gino!!1") {
+
       this.route.navigate(['welcome', this.userId]);
       this.autenticato = true;
-      //this.okMsg = "Login effettuato";
-    } else {
+
+    }
+    else {
       this.autenticato = false;
     }
-
-
-
   }
 
 }

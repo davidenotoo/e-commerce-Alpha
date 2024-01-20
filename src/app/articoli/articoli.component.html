@@ -1,28 +1,29 @@
-<h1>Articoli disponibili</h1>
-<table id="Articoli" border="1">
-    <caption>Alimentari</caption>
-    <thead>
-        <tr>
-            <th>CodArt</th>
-            <th>Descrizione</th>
-            <th>Um</th>
-            <th>Pezzi</th>
-            <th>Peso(KG/LT)</th>
-            <th>Prezzo</th>
-            <th>Attivo</th>
-            <th>Data</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let articolo of articoli">
-            <td>{{articolo.codart}}</td>
-            <td>{{articolo.descrizione}}</td>
-            <td>{{articolo.um}}</td>
-            <td>{{articolo.pzcart}}</td>
-            <td>{{articolo.peso}}</td>
-            <td>{{articolo.prezzo | currency: 'EUR'}}</td>
-            <td>{{articolo.active}}</td>
-            <td>{{articolo.data | date: 'dd-MM-YYYY'}}</td>
-        </tr>
-    </tbody>
+<h1>Articoli Disponibili</h1>
+
+<table id="articoli" border="1">
+  <caption>Alimentari</caption>
+  <thead>
+      <tr>
+          <th>CodArt</th>
+          <th>Descrizione</th>
+          <th>Um</th>
+          <th>Pezzi</th>
+          <th>Peso(KG/LT)</th>
+          <th>Prezzo</th>
+          <th>Attivo</th>
+          <th>Data</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let articolo of articoli">
+        <td>{{articolo.codart}}</td>
+        <td>{{articolo.descrizione}}</td>
+        <td>{{articolo.um}}</td>
+        <td>{{articolo.pzcart}}</td>
+        <td>{{articolo.peso}}</td>
+        <td>{{articolo.prezzo}}</td>
+        <td>{{articolo.active}}</td>
+        <td>{{articolo.data | date : 'dd-MM-YYYY'}}</td>
+    </tr>
+  </tbody>
 </table>
