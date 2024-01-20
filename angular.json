@@ -53,7 +53,9 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/bootstrap.bundle.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -118,9 +120,13 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "../node_modules/jquery/jquery.min.js",
+              "../node_modules/popper.js/dist/umd/popper.min.js",
+              "../node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
           }
         }
       }
