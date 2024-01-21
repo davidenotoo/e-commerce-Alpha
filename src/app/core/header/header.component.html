@@ -42,7 +42,9 @@
           <li><a class="dropdown-item" href="#">Registrati</a></li>
           <li><a class="dropdown-item" href="#">Disabilita</a></li>
           <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" href="#">Logout</a></li>
+
+          <li><a class="dropdown-item" *ngIf="BasicAuth.isLogged()">Logout {{BasicAuth.loggerUser()}}</a></li>
+          <li><a class="dropdown-item disabled" *ngIf="!BasicAuth.isLogged()">Logout</a></li>
         </ul>
       </div>
 
