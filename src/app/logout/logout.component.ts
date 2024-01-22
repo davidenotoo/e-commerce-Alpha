@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthappService } from 'src/services/authapp.service';
 
 @Component({
   selector: 'app-logout',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LogoutComponent implements OnInit {
 
-  constructor() { }
+  constructor(private BasicAuth: AuthappService) { }
 
   ngOnInit(): void {
+    this.BasicAuth.clearAll();
   }
 
 }

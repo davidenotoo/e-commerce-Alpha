@@ -51,7 +51,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/css/round.css"
             ],
             "scripts": [
               "src/assets/js/bootstrap.bundle.min.js"
