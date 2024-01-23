@@ -1,0 +1,26 @@
+<app-jumbotron [Titolo]="titolo" [SottoTitolo]="sottotitolo"></app-jumbotron>
+
+<div class="container login-container">
+    <div class="row">
+        <div class="col-md-6 login-form">
+            <h3>Login Form</h3>
+            <div class="form-group">
+                <input type="text" class="form-control"  id="userId" placeholder="Nome Utente" [(ngModel)] = "userId" >
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control"  id="password" placeholder="Password" [(ngModel)] = "password">
+            </div>
+            <div class="form-group">
+                <button (click) = gestAuth() class="btnSubmit">Connetti</button>
+            </div>
+            <div class="form-group">
+                    <a href="#" class="ForgetPwd">Password Dimenticata?</a>
+            </div>
+            <div class="alert alert-danger" role="alert" *ngIf='!autenticato'>
+                {{errMsg}}
+            </div>
+        </div>
+    </div>
+</div>
+
+

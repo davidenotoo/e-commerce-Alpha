@@ -1,0 +1,22 @@
+
+.content-main {
+  padding: 30px 3%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(255, 255, 255);
+}
+
+.content-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.content-header a {
+  margin-right: 5px;
+}
+
+.content-header .content-title {
+  margin-bottom: 0;
+}

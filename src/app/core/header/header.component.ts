@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+
 import { AuthappService } from 'src/services/authapp.service';
 
 @Component({
@@ -6,10 +7,11 @@ import { AuthappService } from 'src/services/authapp.service';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent implements OnInit{
+export class HeaderComponent implements OnInit {
 
-  constructor(public BasicAuth: AuthappService){}
-  
-  ngOnInit(): void{
+  constructor(public BasicAuth: AuthappService) { }
+
+  ngOnInit(): void {
   }
+
 }
